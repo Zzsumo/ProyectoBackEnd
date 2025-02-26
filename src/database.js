@@ -1,9 +1,7 @@
 import mongoose from "mongoose";
 
 mongoose
-  .connect(
-    "mongodb+srv://valentinoburioni:vburioni1234@apivb.vym0xct.mongodb.net/eccomerce"
-  )
+  .connect("mongodb://localhost:27017/ecommerce")
   .then(() => {
     console.log("Conectado a la base de datos");
   })
